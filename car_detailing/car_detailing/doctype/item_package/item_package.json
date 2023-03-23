@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "creation": "2021-12-07 14:00:47.755389",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_name",
+  "price"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_name.standard_rate",
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-20 09:29:05.478021",
+ "modified_by": "Administrator",
+ "module": "Car Detailing",
+ "name": "Item Package",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

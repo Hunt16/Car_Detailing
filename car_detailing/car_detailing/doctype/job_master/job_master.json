@@ -1,0 +1,525 @@
+{
+ "actions": [],
+ "autoname": "Format:Job-{YYYY}-{MM}-{DD}-{###}",
+ "creation": "2021-07-28 14:30:49.461802",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_information_section",
+  "name1",
+  "mobile_no",
+  "column_break_4",
+  "date_of_receive",
+  "delivery_date",
+  "vehicle_information_section",
+  "kind_of_carvehicle",
+  "year_of_make",
+  "column_break_10",
+  "platechassis_no",
+  "vehicle_color",
+  "car_type_section",
+  "convertible",
+  "html_21",
+  "coupe",
+  "hello",
+  "hatchback",
+  "test2",
+  "column_break_24",
+  "sedan",
+  "test3",
+  "suv",
+  "test4",
+  "truck",
+  "test5",
+  "column_break_23",
+  "minivan",
+  "test6",
+  "van",
+  "test7",
+  "wagon",
+  "test8",
+  "others",
+  "vehicle_summery_report_section",
+  "service_details",
+  "types_of_packages_section",
+  "basic",
+  "golden",
+  "diamond",
+  "platinum",
+  "column_break_41",
+  "paint_protection",
+  "nano_ceramic",
+  "glass_coating",
+  "crysta_coating",
+  "interior_coating",
+  "column_break_47",
+  "wheel_stairing",
+  "seats",
+  "dashboard",
+  "side_door",
+  "gear_knob",
+  "outsourcing_report_section",
+  "description",
+  "amounts",
+  "packages_amounts",
+  "outsourcing_amount",
+  "discount_amount",
+  "column_break_55",
+  "total_amount",
+  "vat_amount",
+  "grand_total",
+  "customer_details_section",
+  "customer_name",
+  "customer_sign",
+  "column_break_35",
+  "service_date",
+  "next_service_date",
+  "section_break_41",
+  "vehicle_pictures",
+  "data_71"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_information_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Information"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_receive",
+   "fieldtype": "Date",
+   "label": "Date Of Receive"
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "label": "Delivery Date"
+  },
+  {
+   "fieldname": "vehicle_information_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Information "
+  },
+  {
+   "fieldname": "kind_of_carvehicle",
+   "fieldtype": "Data",
+   "label": "Kind Of Car/Vehicle"
+  },
+  {
+   "fieldname": "year_of_make",
+   "fieldtype": "Data",
+   "label": "Year Of Make"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "platechassis_no",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Plate/Chassis No"
+  },
+  {
+   "fieldname": "vehicle_color",
+   "fieldtype": "Data",
+   "label": "Vehicle Color"
+  },
+  {
+   "fieldname": "car_type_section",
+   "fieldtype": "Section Break",
+   "label": "Car Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "convertible",
+   "fieldtype": "Check",
+   "label": "Convertible"
+  },
+  {
+   "fieldname": "html_21",
+   "fieldtype": "HTML",
+   "label": "test"
+  },
+  {
+   "default": "0",
+   "fieldname": "coupe",
+   "fieldtype": "Check",
+   "label": "Coupe"
+  },
+  {
+   "fieldname": "hello",
+   "fieldtype": "HTML",
+   "label": "hello"
+  },
+  {
+   "default": "0",
+   "fieldname": "hatchback",
+   "fieldtype": "Check",
+   "label": "Hatchback"
+  },
+  {
+   "fieldname": "test2",
+   "fieldtype": "HTML",
+   "label": "test2"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "sedan",
+   "fieldtype": "Check",
+   "label": "Sedan"
+  },
+  {
+   "fieldname": "test3",
+   "fieldtype": "HTML",
+   "label": "test3"
+  },
+  {
+   "default": "0",
+   "fieldname": "suv",
+   "fieldtype": "Check",
+   "label": "Suv"
+  },
+  {
+   "fieldname": "test4",
+   "fieldtype": "HTML",
+   "label": "test4"
+  },
+  {
+   "default": "0",
+   "fieldname": "truck",
+   "fieldtype": "Check",
+   "label": "Truck"
+  },
+  {
+   "fieldname": "test5",
+   "fieldtype": "HTML",
+   "label": "test5"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "minivan",
+   "fieldtype": "Check",
+   "label": "MiniVan"
+  },
+  {
+   "fieldname": "test6",
+   "fieldtype": "HTML",
+   "label": "test6"
+  },
+  {
+   "default": "0",
+   "fieldname": "van",
+   "fieldtype": "Check",
+   "label": "Van"
+  },
+  {
+   "fieldname": "test7",
+   "fieldtype": "HTML",
+   "label": "test7"
+  },
+  {
+   "default": "0",
+   "fieldname": "wagon",
+   "fieldtype": "Check",
+   "label": "Wagon"
+  },
+  {
+   "fieldname": "test8",
+   "fieldtype": "HTML",
+   "label": "test8"
+  },
+  {
+   "default": "0",
+   "fieldname": "others",
+   "fieldtype": "Check",
+   "label": "Others"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "vehicle_summery_report_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Summery Report"
+  },
+  {
+   "bold": 1,
+   "fieldname": "service_details",
+   "fieldtype": "Section Break",
+   "label": "Service Details"
+  },
+  {
+   "bold": 1,
+   "fieldname": "types_of_packages_section",
+   "fieldtype": "Column Break",
+   "label": "Types Of Package"
+  },
+  {
+   "default": "0",
+   "fieldname": "basic",
+   "fieldtype": "Check",
+   "label": "Basic (starting BHD 60)"
+  },
+  {
+   "default": "0",
+   "fieldname": "golden",
+   "fieldtype": "Check",
+   "label": "Golden (starting BHD 90)"
+  },
+  {
+   "default": "0",
+   "fieldname": "diamond",
+   "fieldtype": "Check",
+   "label": "Diamond (starting BHD 120)"
+  },
+  {
+   "default": "0",
+   "fieldname": "platinum",
+   "fieldtype": "Check",
+   "label": "Platinum (starting BHD 160)"
+  },
+  {
+   "bold": 1,
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break",
+   "label": "Additional Coating"
+  },
+  {
+   "default": "0",
+   "fieldname": "paint_protection",
+   "fieldtype": "Check",
+   "label": "Paint Protection (starting BHD 20)"
+  },
+  {
+   "default": "0",
+   "fieldname": "nano_ceramic",
+   "fieldtype": "Check",
+   "label": "Nano Ceramic (starting BHD 260)"
+  },
+  {
+   "default": "0",
+   "fieldname": "glass_coating",
+   "fieldtype": "Check",
+   "label": "Glass Coating (starting BHD 200)"
+  },
+  {
+   "default": "0",
+   "fieldname": "crysta_coating",
+   "fieldtype": "Check",
+   "label": "Crysta Coating (starting BHD 80)"
+  },
+  {
+   "default": "0",
+   "fieldname": "interior_coating",
+   "fieldtype": "Check",
+   "label": "Interior Coating (starting BHD 60)"
+  },
+  {
+   "bold": 1,
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break",
+   "label": "Leather Painting"
+  },
+  {
+   "default": "0",
+   "fieldname": "wheel_stairing",
+   "fieldtype": "Check",
+   "label": "Wheel Steering (starting BHD 30)"
+  },
+  {
+   "default": "0",
+   "fieldname": "seats",
+   "fieldtype": "Check",
+   "label": "Seats (starting BHD 40)"
+  },
+  {
+   "default": "0",
+   "fieldname": "dashboard",
+   "fieldtype": "Check",
+   "label": "Dashboard (starting BHD 100)"
+  },
+  {
+   "default": "0",
+   "fieldname": "side_door",
+   "fieldtype": "Check",
+   "label": "Side Door (starting BHD 20)"
+  },
+  {
+   "default": "0",
+   "fieldname": "gear_knob",
+   "fieldtype": "Check",
+   "label": "Gear Knob (starting BHD 15)"
+  },
+  {
+   "fieldname": "outsourcing_report_section",
+   "fieldtype": "Section Break",
+   "label": "Outsourcing Report"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "amounts",
+   "fieldtype": "Section Break",
+   "label": "Amounts"
+  },
+  {
+   "fieldname": "packages_amounts",
+   "fieldtype": "Float",
+   "label": "Packages Amount"
+  },
+  {
+   "fieldname": "outsourcing_amount",
+   "fieldtype": "Float",
+   "label": "Outsourcing Amount"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Float",
+   "label": "Discount Amount"
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "vat_amount",
+   "fieldtype": "Float",
+   "label": "VAT Amount (10%)"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Float",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "customer_sign",
+   "fieldtype": "Signature",
+   "label": "Customer Sign"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "service_date",
+   "fieldtype": "Date",
+   "label": "Service Date"
+  },
+  {
+   "fieldname": "next_service_date",
+   "fieldtype": "Date",
+   "label": "Next Service Date"
+  },
+  {
+   "fieldname": "section_break_41",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "vehicle_pictures",
+   "fieldtype": "Table",
+   "label": "Vehicle Pictures",
+   "options": "Vehicle Pictures"
+  },
+  {
+   "fieldname": "data_71",
+   "fieldtype": "Data",
+   "hidden": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-20 09:29:03.812410",
+ "modified_by": "Administrator",
+ "module": "Car Detailing",
+ "name": "Job Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
