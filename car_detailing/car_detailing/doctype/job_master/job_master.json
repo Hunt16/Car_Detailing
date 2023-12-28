@@ -7,11 +7,13 @@
  "engine": "InnoDB",
  "field_order": [
   "customer_information_section",
+  "customer",
   "name1",
   "mobile_no",
   "column_break_4",
   "date_of_receive",
   "delivery_date",
+  "sales_invoice",
   "vehicle_information_section",
   "kind_of_carvehicle",
   "year_of_make",
@@ -59,6 +61,13 @@
   "dashboard",
   "side_door",
   "gear_knob",
+  "section_break_56",
+  "types_of_packages",
+  "additional_coating",
+  "leather_painting",
+  "total_packages_bhd",
+  "total_paint_coating_bhd",
+  "total_leather_coating_bhd",
   "outsourcing_report_section",
   "description",
   "amounts",
@@ -70,6 +79,7 @@
   "vat_amount",
   "grand_total",
   "customer_details_section",
+  "customers",
   "customer_name",
   "customer_sign",
   "column_break_35",
@@ -86,6 +96,7 @@
    "label": "Customer Information"
   },
   {
+   "fetch_from": "customer.customer_name",
    "fieldname": "name1",
    "fieldtype": "Data",
    "in_standard_filter": 1,
@@ -269,6 +280,7 @@
    "bold": 1,
    "fieldname": "service_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Service Details"
   },
   {
@@ -428,6 +440,7 @@
    "label": "Customer Details"
   },
   {
+   "fetch_from": "customers.customer_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
    "label": "Customer Name"
@@ -465,11 +478,66 @@
    "fieldname": "data_71",
    "fieldtype": "Data",
    "hidden": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "customers",
+   "fieldtype": "Link",
+   "label": "Customers",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "types_of_packages",
+   "fieldtype": "Table",
+   "label": "Types Of Packages",
+   "options": "Types Of Packages"
+  },
+  {
+   "fieldname": "section_break_56",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "additional_coating",
+   "fieldtype": "Table",
+   "label": "Additional Coating",
+   "options": "Additional Coating"
+  },
+  {
+   "fieldname": "leather_painting",
+   "fieldtype": "Table",
+   "label": "Leather Painting",
+   "options": "Leather Painting"
+  },
+  {
+   "fieldname": "total_packages_bhd",
+   "fieldtype": "Float",
+   "label": "Total Packages BHD"
+  },
+  {
+   "fieldname": "total_paint_coating_bhd",
+   "fieldtype": "Float",
+   "label": "Total Paint Coating BHD "
+  },
+  {
+   "fieldname": "total_leather_coating_bhd",
+   "fieldtype": "Float",
+   "label": "Total Leather Coating BHD"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-20 09:29:03.812410",
+ "modified": "2023-10-02 14:10:00.820180",
  "modified_by": "Administrator",
  "module": "Car Detailing",
  "name": "Job Master",

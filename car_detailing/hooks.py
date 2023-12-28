@@ -144,7 +144,24 @@ app_license = "MIT"
 
 # User Data Protection
 # --------------------
+fixtures = [
 
+    {"dt": "Custom Field", "filters": [
+        [
+            "name", "in", [
+				"Item-is_type_of_packages","Item-is_additional_coating","Item-is_leather_coating"
+            ]
+        ]
+    ]},
+	
+	{"dt": "Print Format", "filters": [
+        [
+            "name", "in", [
+				"Job Master Print Format"
+            ]
+        ]
+    ]},
+]
 user_data_fields = [
 	{
 		"doctype": "{doctype_1}",

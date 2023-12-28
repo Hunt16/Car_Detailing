@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "creation": "2023-07-07 09:07:32.680838",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "rate",
+  "currency",
+  "checkbox"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item.standard_rate",
+   "fetch_if_empty": 1,
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate"
+  },
+  {
+   "default": "BHD",
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Currency"
+  },
+  {
+   "default": "0",
+   "fieldname": "checkbox",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Checkbox"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-07 09:08:18.716644",
+ "modified_by": "Administrator",
+ "module": "Car Detailing",
+ "name": "Leather Painting",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
