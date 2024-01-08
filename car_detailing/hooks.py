@@ -96,6 +96,11 @@ app_license = "MIT"
 # 		"on_trash": "method"
 #	}
 # }
+doc_events = {
+	"Sales Invoice": {
+		"before_save": "car_detailing.car_detailing.custom_doctype.sales_invoice.before_save",
+	}
+}
 
 # Scheduled Tasks
 # ---------------
