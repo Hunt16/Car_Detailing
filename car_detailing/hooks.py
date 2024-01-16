@@ -162,7 +162,7 @@ fixtures = [
 	{"dt": "Print Format", "filters": [
         [
             "name", "in", [
-				"Job Master Print Format"
+				"Job Master Print Format","Tax Invoice Format"
             ]
         ]
     ]},

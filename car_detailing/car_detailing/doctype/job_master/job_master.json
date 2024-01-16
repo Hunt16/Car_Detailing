@@ -42,6 +42,13 @@
   "wagon",
   "test8",
   "others",
+  "column_break_37",
+  "yacht",
+  "test9",
+  "boat",
+  "test10",
+  "jet_ski",
+  "test11",
   "vehicle_summery_report_section",
   "service_details",
   "types_of_packages_section",
@@ -81,6 +88,7 @@
   "customer_details_section",
   "customers",
   "customer_name",
+  "national_id",
   "customer_sign",
   "column_break_35",
   "service_date",
@@ -99,14 +107,18 @@
    "fetch_from": "customer.customer_name",
    "fieldname": "name1",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Customer Name"
+   "label": "Customer Name",
+   "reqd": 1
   },
   {
    "fieldname": "mobile_no",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Mobile No"
+   "label": "Mobile No",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_4",
@@ -115,12 +127,15 @@
   {
    "fieldname": "date_of_receive",
    "fieldtype": "Date",
-   "label": "Date Of Receive"
+   "in_list_view": 1,
+   "label": "Date Of Receive",
+   "reqd": 1
   },
   {
    "fieldname": "delivery_date",
    "fieldtype": "Date",
-   "label": "Delivery Date"
+   "label": "Delivery Date",
+   "reqd": 1
   },
   {
    "fieldname": "vehicle_information_section",
@@ -130,12 +145,14 @@
   {
    "fieldname": "kind_of_carvehicle",
    "fieldtype": "Data",
-   "label": "Kind Of Car/Vehicle"
+   "label": "Kind Of Car/Vehicle",
+   "reqd": 1
   },
   {
    "fieldname": "year_of_make",
    "fieldtype": "Data",
-   "label": "Year Of Make"
+   "label": "Year Of Make",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_10",
@@ -145,12 +162,14 @@
    "fieldname": "platechassis_no",
    "fieldtype": "Data",
    "in_standard_filter": 1,
-   "label": "Plate/Chassis No"
+   "label": "Plate/Chassis No",
+   "reqd": 1
   },
   {
    "fieldname": "vehicle_color",
    "fieldtype": "Data",
-   "label": "Vehicle Color"
+   "label": "Vehicle Color",
+   "reqd": 1
   },
   {
    "fieldname": "car_type_section",
@@ -437,13 +456,13 @@
   {
    "fieldname": "customer_details_section",
    "fieldtype": "Section Break",
-   "label": "Customer Details"
+   "label": "Customer Acknowledgment"
   },
   {
    "fetch_from": "customers.customer_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
-   "label": "Customer Name"
+   "label": "Acknowledged Name"
   },
   {
    "fieldname": "customer_sign",
@@ -482,13 +501,15 @@
   {
    "fieldname": "customer",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer"
+   "options": "Customer",
+   "reqd": 1
   },
   {
    "fieldname": "customers",
    "fieldtype": "Link",
-   "label": "Customers",
+   "label": "Acknowledged by",
    "options": "Customer"
   },
   {
@@ -533,11 +554,53 @@
    "fieldtype": "Link",
    "label": "Sales Invoice",
    "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "yacht",
+   "fieldtype": "Check",
+   "label": "Yacht"
+  },
+  {
+   "fieldname": "test9",
+   "fieldtype": "HTML",
+   "label": "test9"
+  },
+  {
+   "default": "0",
+   "fieldname": "boat",
+   "fieldtype": "Check",
+   "label": "Boat"
+  },
+  {
+   "fieldname": "test10",
+   "fieldtype": "HTML",
+   "label": "test10"
+  },
+  {
+   "default": "0",
+   "fieldname": "jet_ski",
+   "fieldtype": "Check",
+   "label": "Jet Ski"
+  },
+  {
+   "fieldname": "test11",
+   "fieldtype": "HTML",
+   "label": "test11"
+  },
+  {
+   "fieldname": "national_id",
+   "fieldtype": "Data",
+   "label": "National ID"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-02 14:10:00.820180",
+ "modified": "2024-01-16 13:24:42.343902",
  "modified_by": "Administrator",
  "module": "Car Detailing",
  "name": "Job Master",

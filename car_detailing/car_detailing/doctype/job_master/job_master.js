@@ -17,6 +17,9 @@ frappe.ui.form.on('Job Master', {
 		$(frm.fields_dict.test6.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/2927084-200475867.png'>")
 		$(frm.fields_dict.test7.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/van(1).jpg'>")
 		$(frm.fields_dict.test8.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/PngItem_2803228(2).png'>")
+    $(frm.fields_dict.test9.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/yacht_1.jpg'>")
+    $(frm.fields_dict.test10.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/boat_1.jpg'>")
+    $(frm.fields_dict.test11.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/jet_ski_1.jpg'>")
 		
 		  frm.set_query("item", "types_of_packages", function(doc) {
                return { "filters" : [['is_type_of_packages','=',1]]}
@@ -64,6 +67,19 @@ frappe.ui.form.on('Job Master', {
             })
         });
      }
+
+     frappe.db.get_value('Sales Invoice', {'name': frm.doc.sales_invoice}, 'docstatus')
+        .then(r => {
+            let values = r.message;
+            console.log(values.docstatus)
+            if(values.docstatus<2){
+                frm.set_df_property('sales_invoice', 'read_only', 1)
+            }
+            else{
+                frm.set_df_property('sales_invoice', 'read_only', 0)
+            }
+        })
+
      
      
 	},
@@ -106,11 +122,11 @@ frappe.ui.form.on('Types Of Packages', {
 })
 
 frappe.ui.form.on('Leather Painting', {
-  item:function(frm,cdt,cdn){
+item:function(frm,cdt,cdn){
     var row = locals[cdt][cdn]
     frappe.model.set_value(cdt,cdn,"checkbox",1)
     refresh_field("leather_painting");
-  }
+}
 })
 
 frappe.ui.form.on('Additional Coating', {
