@@ -98,7 +98,7 @@ app_license = "MIT"
 # }
 doc_events = {
 	"Sales Invoice": {
-		"before_save": "car_detailing.car_detailing.custom_doctype.sales_invoice.before_save",
+		"validate": "car_detailing.car_detailing.custom_doctype.sales_invoice.validate",
 	}
 }
 
