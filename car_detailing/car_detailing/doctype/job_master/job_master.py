@@ -16,7 +16,8 @@ def create_sales_invoice(self):
 			'doctype':'Sales Invoice',
 			'customer':self['customer'],
 			'posting_date':self['date_of_receive'],
-			'due_date':self['delivery_date']
+			'due_date':self['delivery_date'],
+			'company':self['company']
 		})
 
 		for item in self['types_of_packages']:
