@@ -57,19 +57,33 @@ frappe.ui.form.on('Job Master', {
 		}
 
 
+		
+		// $(frm.fields_dict.html_21.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/convertible-car%20(1)(1).png'>")
+		// $(frm.fields_dict.hello.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/coupe(1).jpg'>")
+		// $(frm.fields_dict.test2.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/hatchback-car(1).jpg'>")
+		// $(frm.fields_dict.test3.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/8526-8466dd65.png'>")
+		// $(frm.fields_dict.test4.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/suv(1).jpg'>")
+		// $(frm.fields_dict.test5.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/3003313-200(1).png'>")
+		// $(frm.fields_dict.test6.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/2927084-200475867.png'>")
+		// $(frm.fields_dict.test7.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/van(1).jpg'>")
+		// $(frm.fields_dict.test8.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/PngItem_2803228(2).png'>")
+		// $(frm.fields_dict.test9.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/yacht_1.jpg'>")
+		// $(frm.fields_dict.test10.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/boat_1.jpg'>")
+		// $(frm.fields_dict.test11.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/jet_ski_1.jpg'>")
 
-		$(frm.fields_dict.html_21.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/convertible-car%20(1)(1).png'>")
-		$(frm.fields_dict.hello.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/coupe(1).jpg'>")
-		$(frm.fields_dict.test2.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/hatchback-car(1).jpg'>")
-		$(frm.fields_dict.test3.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/8526-8466dd65.png'>")
-		$(frm.fields_dict.test4.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/suv(1).jpg'>")
-		$(frm.fields_dict.test5.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/3003313-200(1).png'>")
-		$(frm.fields_dict.test6.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/2927084-200475867.png'>")
-		$(frm.fields_dict.test7.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/van(1).jpg'>")
-		$(frm.fields_dict.test8.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/PngItem_2803228(2).png'>")
-		$(frm.fields_dict.test9.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/yacht_1.jpg'>")
-		$(frm.fields_dict.test10.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/boat_1.jpg'>")
-		$(frm.fields_dict.test11.wrapper).html("<image src='https://mrsh.tncbahrain.com/files/jet_ski_1.jpg'>")
+		$(frm.fields_dict.html_21.wrapper).html("<image src='https://mrsh.mohaseb.online/files/convertible-car.png'>")
+		$(frm.fields_dict.hello.wrapper).html("<image src='https://mrsh.mohaseb.online/files/coupe.jpg'>")
+		$(frm.fields_dict.test2.wrapper).html("<image src='https://mrsh.mohaseb.online/files/hatchback-car.jpg'>")
+		$(frm.fields_dict.test3.wrapper).html("<image src='https://mrsh.mohaseb.online/files/sedan.png'>")
+		$(frm.fields_dict.test4.wrapper).html("<image src='https://mrsh.mohaseb.online/files/suv.jpg'>")
+		$(frm.fields_dict.test5.wrapper).html("<image src='https://mrsh.mohaseb.online/files/truck.png'>")
+		$(frm.fields_dict.test6.wrapper).html("<image src='https://mrsh.mohaseb.online/files/minivan.png'>")
+		$(frm.fields_dict.test7.wrapper).html("<image src='https://mrsh.mohaseb.online/files/van.jpg'>")
+		$(frm.fields_dict.test8.wrapper).html("<image src='https://mrsh.mohaseb.online/files/wagon.png'>")
+		$(frm.fields_dict.test9.wrapper).html("<image src='https://mrsh.mohaseb.online/files/yacht.jpg'>")
+		$(frm.fields_dict.test10.wrapper).html("<image src='https://mrsh.mohaseb.online/files/boat.jpg'>")
+		$(frm.fields_dict.test11.wrapper).html("<image src='https://mrsh.mohaseb.online/files/jet_ski.jpg'>")
+
 		
 		frm.set_query("item", "types_of_packages", function(doc) {
 			return { "filters" : [['is_type_of_packages','=',1]]}
