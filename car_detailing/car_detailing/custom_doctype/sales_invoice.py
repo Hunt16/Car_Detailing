@@ -10,10 +10,13 @@ def validate(self,method):
             self.calculate_taxes_and_totals()
     
     for item in self.items:
-        company = frappe.db.get_value("Item",{"name": item.item_code}, "company")
+        if item.item_code == "Consulting Service Item":
+            continue
+        
+        company = frappe.db.get_value("Item", {"name": item.item_code}, "company")
         if not company:
             frappe.msgprint(f"Not Found Company For This Item {item.item_code}")
         
         if self.company != company:
-            frappe.throw(f"This Item <b>{item.item_code}</b> Does Not Belongs To This Company:<b>{self.company}</b>")
+            frappe.throw(f"This Item <b>{item.item_code}</b> Does Not Belong To This Company:<b>{self.company}</b>")
             

@@ -65,6 +65,15 @@ def create_sales_invoice(self):
 					'rate':item['rate']
 				}
 				sales_doc.append('items',sales_painting_item_doc)	
+		
+		if self['outsourcing_amount']:
+			sales_outsourcing_item_doc = {
+				'doctype':'Sales Invoice Item',
+				'item_code':'Consulting Service Item',
+				'qty':'1',
+				'rate':self['outsourcing_amount']
+			}
+			sales_doc.append('items',sales_outsourcing_item_doc)
 
 		so = sales_doc.insert(ignore_permissions = 1)
 		so.calculate_taxes_and_totals()
