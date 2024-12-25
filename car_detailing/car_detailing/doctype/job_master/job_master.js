@@ -114,15 +114,13 @@ frappe.ui.form.on('Job Master', {
 			}
 		});
 		
-		if(!frm.doc.sales_invoice){
+		if(!frm.doc.sales_invoice && !frm.is_new()){
 			frm.add_custom_button(__('Create Sales Invoice'), function(){
 				frappe.call({
 					method: 'car_detailing.car_detailing.doctype.job_master.job_master.create_sales_invoice',
 					args: {
 						'self': frm.doc
 					},
-					
-					// freeze the screen until the request is completed
 					freeze: true,
 					callback: (r) => {
 						frm.reload_doc();
