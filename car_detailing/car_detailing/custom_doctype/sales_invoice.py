@@ -8,9 +8,10 @@ def validate(self,method):
         for tax in taxes:
             self.append("taxes", tax)
             self.calculate_taxes_and_totals()
-    
+
+    service_item = frappe.db.get_single_value("Car Detailing Settings", "service_item")
     for item in self.items:
-        if item.item_code == "Consulting Service Item":
+        if item.item_code == service_item:
             continue
         
         company = frappe.db.get_value("Item", {"name": item.item_code}, "company")
