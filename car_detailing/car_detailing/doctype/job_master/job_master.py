@@ -67,9 +67,12 @@ def create_sales_invoice(self):
 				sales_doc.append('items',sales_painting_item_doc)	
 		
 		if self['outsourcing_amount']:
+			service_item = frappe.db.get_single_value("Car Detailing Settings", "service_item")
+			if not service_item:
+				frappe.throw("Service Item Not Found, Kindly Set Service Item in Car Detailing Settings")
 			sales_outsourcing_item_doc = {
 				'doctype':'Sales Invoice Item',
-				'item_code':'Consulting Service Item',
+				'item_code':service_item,
 				'qty':'1',
 				'rate':self['outsourcing_amount']
 			}
