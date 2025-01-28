@@ -154,7 +154,8 @@ fixtures = [
     {"dt": "Custom Field", "filters": [
         [
             "name", "in", [
-				"Item-is_type_of_packages","Item-is_additional_coating","Item-is_leather_coating"
+				"Item-is_type_of_packages","Item-is_additional_coating","Item-is_leather_coating","Item-custom_car_detailing",
+                "Item-custom_companies","Item-custom_column_break_rfmqa","Item-custom_sequence"
             ]
         ]
     ]},

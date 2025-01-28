@@ -8,16 +8,15 @@ def validate(self,method):
         for tax in taxes:
             self.append("taxes", tax)
             self.calculate_taxes_and_totals()
-
+    
     service_item = frappe.db.get_single_value("Car Detailing Settings", "service_item")
     for item in self.items:
         if item.item_code == service_item:
             continue
-        
-        company = frappe.db.get_value("Item", {"name": item.item_code}, "company")
-        if not company:
-            frappe.msgprint(f"Not Found Company For This Item {item.item_code}")
-        
-        if self.company != company:
+
+        # Check if a matching Item Default exists
+        exists = frappe.db.exists("Companies",{"parent": item.item_code,"company": self.company})
+
+        if not exists:
             frappe.throw(f"This Item <b>{item.item_code}</b> Does Not Belong To This Company:<b>{self.company}</b>")
-            
+
