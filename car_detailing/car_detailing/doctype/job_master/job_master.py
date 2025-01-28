@@ -10,15 +10,15 @@ class JobMaster(Document):
 
 @frappe.whitelist()
 def get_types_of_packages():
-	return frappe.db.sql("""select item_code, standard_rate from `tabItem` where is_type_of_packages = 1 ORDER BY custom_sequence""",as_dict=1)
+	return frappe.db.sql("""select item_code, standard_rate from `tabItem` where is_type_of_packages = 1 ORDER BY custom_item_sequence""",as_dict=1)
 
 @frappe.whitelist()
 def get_additional_coating():
-	return frappe.db.sql("""select item_code, standard_rate from `tabItem` where is_additional_coating = 1 ORDER BY custom_sequence""",as_dict=1)
+	return frappe.db.sql("""select item_code, standard_rate from `tabItem` where is_additional_coating = 1 ORDER BY custom_item_sequence""",as_dict=1)
 
 @frappe.whitelist()
 def get_leather_painting():
-	return frappe.db.sql("""select item_code, standard_rate from `tabItem` where is_leather_coating = 1 ORDER BY custom_sequence""",as_dict=1)
+	return frappe.db.sql("""select item_code, standard_rate from `tabItem` where is_leather_coating = 1 ORDER BY custom_item_sequence""",as_dict=1)
 
 @frappe.whitelist()
 def create_sales_invoice(self):
